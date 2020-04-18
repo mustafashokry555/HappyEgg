@@ -1,0 +1,146 @@
+body
+{
+    background-image: url(../img/Background_Night.svg);
+    background-size: cover;
+    background-position:center center;
+    font-family: 'Roboto', sans-serif;
+}
+.bar
+{
+    color: rgba(255,255,255,0.8);
+    font-size: 25px;
+    font-weight: bold;
+
+}
+#start ,#end 
+{
+    width: 50%;
+    background-color: #4C4660;
+    border: 4px solid #FF4571;
+    border-radius: 70px;
+    top: 50vh;
+    transform: translate(50%, -50%);
+    z-index: 150;
+}
+#start h1 ,#end h1
+{
+    color: #fff;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: -0.1em;
+    word-spacing: 10px;
+    margin-top: 20px;
+}
+#start button ,#end button
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff5f84;
+    border: 4px solid #fff;
+    border-radius: 100px;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 44px;
+    top: 28px;
+}
+#end h2
+{
+    color: #FFE345;
+    font-weight: 900;
+    font-size: 130px;
+    letter-spacing: -6px;
+}
+
+.hen
+{
+    width: 15%;
+    animation: scale 1s infinite linear;
+    position: absolute;
+    z-index: 100;
+}
+#hen1 { left: 0%;}
+#hen2 { left: 44%;}
+#hen3 { left: 87%;}
+@keyframes scale
+{
+    0%{
+        transform: scale3d(1,1,1);
+    }
+    50%{
+        transform: scale3d(1.05,1.05,1.05);
+    }
+    100%{
+        transform: scale3d(1,1,1);
+    }
+}
+.egg 
+{
+    position: absolute;
+    width: 5%;
+    top:40px;
+    z-index: 8;
+}
+#egg1 { left: 5%;}
+#egg2 { left: 49%;}
+#egg3 { left: 92%;}
+@keyframes eggMove
+{
+    0%
+    {
+        top: 40px;
+    }
+    100%
+    {
+        top: 90vh;
+    }
+}
+#basket
+{
+    width: 85px;
+    height: 100px;
+    background: url(../img/Basket.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: absolute;
+    bottom: 5px;
+    z-index: 11;
+}
+#basketScore
+{
+    color: #FFE345;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 30px;
+    position: absolute;
+    top: 7px;
+    left:34px ;
+}
+#floor
+{
+    width: 100%; 
+    height: 10%;
+    position: absolute;
+    bottom: 0; 
+    z-index: 9;
+}
+#end
+{display: none;}
+
+.brokenEgg
+{
+    position: absolute;
+    width: 15%;
+    bottom: 40px;
+    z-index: 5 ;
+    display: none;
+}
+#brokenEgg1 { 
+    left: 0%;
+}
+#brokenEgg2 { left: 45%;}
+#brokenEgg3 { left: 90%;
+}
+
+

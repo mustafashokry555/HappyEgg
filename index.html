@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="overflow-hidden">
+
+
+    <div class="container-fluid h-100 mx-auto row" id="main">
+
+      
+      
+      <div class="bar w-100 d-flex justify-content-between">
+        <div >Score <span id="score"></span></div>
+        <div >Life <span id="life"></span></div>
+      </div>
+
+
+      <div id="start" class=" position-fixed text-center m-auto">
+          <h1 class="text-uppercase ">happy eggs</h1>
+          <button id="play" class="px-5 position-relative">Play</button>
+      </div>
+
+      <div class="col-sm-8  mx-auto h-100 ">
+       
+
+        <div class="hens ">
+          <div id="hen1" class="hen">
+            <img class="w-100" src="img/Happy_hen.svg">
+          </div>
+          <div id="hen2" class="hen">
+            <img class="w-100" src="img/Happy_hen.svg">
+          </div>
+          <div id="hen3" class="hen">
+            <img class="w-100" src="img/Happy_hen.svg">
+          </div>
+        </div>
+        <div class="brokenEgg" id="brokenEgg1">
+          <img class="w-100" src="img/Broken_Egg.svg">
+        </div>
+        <div class="brokenEgg" id="brokenEgg2">
+          <img class="w-100" src="img/Broken_Egg.svg">
+        </div>
+        <div class="brokenEgg" id="brokenEgg3">
+          <img class="w-100" src="img/Broken_Egg.svg">
+        </div>
+
+        <div class="eggs ">
+
+          <div class="egg" id="egg1">
+            <img class="w-100" src="img/Happy_Egg.svg">
+          </div>
+          <div class="egg" id="egg2">
+            <img class="w-100" src="img/Happy_Egg.svg">
+          </div>
+          <div class="egg" id="egg3">
+            <img class="w-100" src="img/Happy_Egg.svg">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  <div class="" id="basket">
+    <span id="basketScore"></span>
+  </div>  
+
+    <div id="floor" class=""></div>
+
+    <div class=" position-fixed text-center m-auto" id="end">
+      <h1 class="text-uppercase mb-2">happy eggs</h1>
+      <h2 class="p-0 " id="finalScore"></h2>
+      <button  id="playAgain" class=" position-relative">Play Again</button>
+    </div>  
+
+
+
+
+
+    
+
+
+
+
+
+
+  
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
